@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>API Hello v2</title>
+</head>
+<body>
+    <h1>API Hello v2</h1>
+
+    <form action="http://localhost:8000/v2/hi" method="POST">
+        <label for="name">Seu nome:</label>
+        <input type="text" id="name" name="name" required>
+
+        <br><br>
+
+        <label for="lang">Idioma:</label>
+        <select id="lang" name="lang">
+            <option value="pt-br">Português</option>
+            <option value="es">Espanhol</option>
+            <option value="en">Inglês</option>
+        </select>
+
+        <br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
